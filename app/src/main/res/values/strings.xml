@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Tintracker</string>
+    <string name="projects">Projects</string>
+    <string name="tasks">Tasks</string>
+    <string name="statistics">Statistics</string>
+    <string name="categories">Categories</string>
+    <string name="save">Save</string>
+    <string name="category">Category</string>
+    <string name="category_successfully_saved">Category successfully saved</string>
+    <string name="category_successfully_updated">Category successfully updated</string>
+    <string name="new_category">New category</string>
+    <string name="edit_category">Edit category</string>
+    <string name="new_project">New project</string>
+    <string name="edit_project">Edit project</string>
+    <string name="category_successfully_deleted">Category successfully deleted</string>
+    <string name="start">Start</string>
+    <string name="project_successfully_saved">Project successfully saved</string>
+    <string name="project_successfully_updated">Project successfully updated</string>
+    <string name="project_successfully_deleted">Project successfully deleted</string>
+    <string name="delete_project_msg">Do you want to cancel this project?</string>
+    <string name="attention">Attention</string>
+    <string name="task_successfully_saved">Task successfully saved</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">No data</string>
+    <string name="client">Client name</string>
+    <string name="color">Color</string>
+    <string name="project_name">Project name</string>
+    <string name="hourly_rate">Hourly rate (zero or more)</string>
+    <string name="hourly_rate_home">Hourly rate</string>
+    <string name="status_project">Status Project</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="closed">Closed</string>
+    <string name="delete_project">Delete project</string>
+    <string name="stop_timer">Stop timer</string>
+    <string name="category_task">Category task</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="tracked">Tracked hours</string>
+    <string name="billable">Billable</string>
+    <string name="number_tasks">Number tasks</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_toolbar">22sp</dimen>
+    <dimen name="text_button">18sp</dimen>
+    <dimen name="text_item">16sp</dimen>
+    <dimen name="item_client">16sp</dimen>
+    <dimen name="item_project">20sp</dimen>
+    <dimen name="item_task_project">26sp</dimen>
+    <dimen name="elevation">7dp</dimen>
+</resources>

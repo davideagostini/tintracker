@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/projectsFragment">
+
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.tintracker.ui.project.ProjectsFragment"
+        android:label="@string/projects"
+        tools:layout="@layout/fragment_projects" />
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.tintracker.ui.task.TasksFragment"
+        android:label="@string/tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_projectsFragment"
+            app:destination="@id/projectsFragment"
+            app:popUpTo="@id/projectsFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.tintracker.ui.statistic.StatisticsFragment"
+        android:label="@string/statistics"
+        tools:layout="@layout/fragment_statistics" >
+
+        <action
+            android:id="@+id/action_statisticsFragment_to_projectsFragment"
+            app:destination="@id/projectsFragment"
+            app:popUpTo="@id/projectsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.tintracker.ui.category.CategoriesFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_categories" >
+
+        <action
+            android:id="@+id/action_categoriesFragment_to_projectsFragment"
+            app:destination="@id/projectsFragment"
+            app:popUpTo="@id/projectsFragment" />
+    </fragment>
+</navigation>

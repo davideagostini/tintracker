@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColorTimer"
+    tools:context=".ui.task.TaskActivity">
+
+    <ImageView
+        android:id="@+id/bgcircle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/bg_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProject" />
+
+    <ImageView
+        android:id="@+id/icanchor"
+        android:layout_width="257dp"
+        android:layout_height="257dp"
+        android:src="@drawable/icanchor"
+        app:layout_constraintBottom_toBottomOf="@+id/bgcircle"
+        app:layout_constraintEnd_toEndOf="@+id/bgcircle"
+        app:layout_constraintStart_toStartOf="@+id/bgcircle"
+        app:layout_constraintTop_toTopOf="@+id/bgcircle" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="@font/google_sans"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icanchor" />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:src="@drawable/ic_close"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/item_project"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClose"
+        tools:text="Project 1" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/simple_spinner"
+        android:gravity="center"
+        android:padding="0dp"
+        android:prompt="@string/category_task"
+        android:spinnerMode="dialog"
+        android:textSize="@dimen/text_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+
+    <Button
+        android:id="@+id/flbSaveTask"
+        style="@style/AppTheme.ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/stop_timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

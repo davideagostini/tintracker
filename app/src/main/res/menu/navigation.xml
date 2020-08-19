@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/projectsFragment"
+        android:icon="@drawable/ic_projects"
+        android:title="@string/projects"/>
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/tasks" />
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_statistics"
+        android:title="@string/statistics"/>
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/ic_categories"
+        android:title="@string/categories"/>
+
+</menu>

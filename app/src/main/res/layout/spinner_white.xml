@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tvName"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:text="Development"
+    android:gravity="start"
+    android:textColor="@color/white"
+    android:fontFamily="@font/google_sans"
+    android:textSize="@dimen/text_item"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools" />

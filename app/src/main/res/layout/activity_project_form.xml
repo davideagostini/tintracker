@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="vertical"
+    tools:context=".ui.project.ProjectFormActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/labelClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/client"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_item" />
+
+
+        <EditText
+            android:id="@+id/tvClient"
+            style="@style/AppTheme.CustomEditText"
+            android:textAppearance="@style/AppTheme.CustomTextFloatAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@null"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelClient" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/color"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_color" />
+
+        <TextView
+            android:id="@+id/labelProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/project_name"
+            android:textColor="@color/textColor"
+            android:textColorHint="#FFFFFF"
+            android:textSize="@dimen/text_item" />
+
+        <EditText
+            android:id="@+id/tvProject"
+            style="@style/AppTheme.CustomEditText"
+            android:textAppearance="@style/AppTheme.CustomTextFloatAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@null"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelProject" />
+
+
+        <TextView
+            android:id="@+id/labelHourlyRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/hourly_rate"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_item" />
+
+        <EditText
+            android:id="@+id/tvHourlyRate"
+            style="@style/AppTheme.CustomEditText"
+            android:textAppearance="@style/AppTheme.CustomTextFloatAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@null"
+            android:textCursorDrawable="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelHourlyRate" />
+
+        <TextView
+            android:id="@+id/labelStatusProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/status_project"
+            android:textSize="@dimen/text_item"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnStatusProject"
+            style="@style/AppTheme.ButtonStyle.White_Shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/ongoing"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/AppTheme.ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/save" />
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/delete_project"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

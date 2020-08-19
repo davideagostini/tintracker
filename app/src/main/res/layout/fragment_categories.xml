@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context=".ui.category.CategoriesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCategory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/category_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flbAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/no_data_imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_no_data"
+        android:visibility="invisible"
+        app:tint="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="@+id/listCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listCategory"
+        app:layout_constraintTop_toTopOf="@+id/listCategory"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/no_data_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:alpha="0.5"
+        android:text="@string/no_data"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listCategory"
+        app:layout_constraintTop_toBottomOf="@+id/no_data_imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

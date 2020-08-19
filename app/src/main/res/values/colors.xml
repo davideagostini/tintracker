@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="windowBackground">#F3F3F3</color>
+    <color name="itemProjectBackground">#FFFFFF</color>
+    <color name="colorAccent">#607ff2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#9e9e9e</color>
+    <color name="textColor">@android:color/black</color>
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+    <color name="red">#EB144C</color>
+    <color name="project_locked_color">@android:color/white</color>
+    <color name="pOrange">#FF6900</color>
+    <color name="pYellow">#FCB900</color>
+    <color name="pLightGreen">#7BDCB5</color>
+    <color name="pGreen">#00D084</color>
+    <color name="pLightBlue">#8ED1FC</color>
+    <color name="pBlue">#0693E3</color>
+    <color name="pGrey">#ABB8C3</color>
+    <color name="pRed">#EB144C</color>
+    <color name="pPink">#F78DA7</color>
+    <color name="pViolet">#9900EF</color>
+    <color name="backgroundColorTimer">#001719</color>
+    <color name="itemTitleDayInTask">#e2eaf0</color>
+    <color name="blue">#4c51c6</color>
+    <color name="night_blue">#607ff2</color>
+    <color name="light_grey">#e2eaf0</color>
+    <color name="text_grey">#626262</color>
+</resources>
