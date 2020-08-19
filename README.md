@@ -2,7 +2,7 @@
 
 # Tintracker
 
-This is a series of tutorial that teaches you the basics to build mobile applications following modern development standards.
+This is a series of tutorials that teaches you the basics to build mobile applications following modern development standards.
 
 In this first tutorial you build an app called **Tintracker** for tracking the time on your activities 
 and for calculate your earnings. 🗂️💰
