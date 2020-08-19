@@ -2,6 +2,10 @@
 
 # Tintracker
 
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Github Followers](https://img.shields.io/github/followers/davideagostini?label=Follow&style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/davideagostini?label=Follow&style=social)
+
 This is a series of tutorials that teaches you the basics to build mobile applications following modern development standards.
 
 In this first tutorial you build an app called **Tintracker** for tracking the time on your activities 
@@ -28,6 +32,9 @@ you will learn how to use **Clean Architecture** on your projects to build robus
 - more...
 
 ![](media/foto-2.png)
+
+To a preview of the app that you are going to build, watch this intro [video](https://www.youtube.com/watch?v=4bBzAlG1gJY&t=4s)
+
 
 ## Contact
 If you need any help, you can connect with me.
