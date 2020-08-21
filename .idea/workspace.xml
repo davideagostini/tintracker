@@ -7,16 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e24d1222-f653-4ac2-b837-41656148c2a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_calendar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/date_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/dao/TaskDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/dao/TaskDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/repository/TaskRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/repository/TaskRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TaskViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TaskViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TasksFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TasksFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/utils/DateTimeUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/utils/DateTimeUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/project/ProjectsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/project/ProjectsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_projects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_projects.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,9 +178,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2615" y="408" key="AndroidCreateResourceFileDialog" timestamp="1597996876992">
-      <screen x="1440" y="23" width="2512" height="1417" />
+    <state x="568" y="261" key="AndroidCreateResourceFileDialog" timestamp="1598022402127">
+      <screen x="0" y="23" width="1392" height="877" />
     </state>
+    <state x="568" y="261" key="AndroidCreateResourceFileDialog/0.23.1392.877@0.23.1392.877" timestamp="1598022402127" />
     <state x="2615" y="408" key="AndroidCreateResourceFileDialog/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597996876992" />
     <state x="2877" y="486" key="AndroidCreateXmlResourceDialog" timestamp="1597996924581">
       <screen x="1440" y="23" width="2512" height="1417" />

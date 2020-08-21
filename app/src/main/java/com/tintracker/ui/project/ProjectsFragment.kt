@@ -2,6 +2,7 @@ package com.tintracker.ui.project
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,7 @@ class ProjectsFragment : Fragment() {
     private val projectViewModel: ProjectViewModel by viewModel()
     private var adapter =
         ProjectListAdapter { project, action -> execAction(project, action) }
+    private var handlerAnimation = Handler()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,10 +49,12 @@ class ProjectsFragment : Fragment() {
                binding.noDataImageView.hide()
                binding.noDataTextView.hide()
                adapter.submitList(projects)
+               stopPulse()
            } else {
                binding.listProject.hide()
                binding.noDataImageView.show()
                binding.noDataTextView.show()
+               startPulse()
            }
         })
     }
@@ -74,6 +78,35 @@ class ProjectsFragment : Fragment() {
                 intent.putExtra("project", project)
                 startActivity(intent)
             }
+        }
+    }
+
+    private fun startPulse() {
+        runnable.run()
+    }
+
+    private fun stopPulse() {
+        handlerAnimation.removeCallbacks(runnable)
+    }
+
+    private var runnable = object : Runnable {
+        override fun run() {
+
+            binding.imgAnim1.animate().scaleX(4f).scaleY(4f).alpha(0f).setDuration(1000)
+                .withEndAction {
+                    binding.imgAnim1.scaleX = 1f
+                    binding.imgAnim1.scaleY = 1f
+                    binding.imgAnim1.alpha = 1f
+                }
+
+            binding.imgAnim2.animate().scaleX(4f).scaleY(4f).alpha(0f).setDuration(700)
+                .withEndAction {
+                    binding.imgAnim2.scaleX = 1f
+                    binding.imgAnim2.scaleY = 1f
+                    binding.imgAnim2.alpha = 1f
+                }
+
+            handlerAnimation.postDelayed(this, 1500)
         }
     }
 
