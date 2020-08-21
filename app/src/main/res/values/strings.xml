@@ -40,4 +40,5 @@
     <string name="tracked">Tracked hours</string>
     <string name="billable">Billable</string>
     <string name="number_tasks">Number tasks</string>
+    <string name="date">Date</string>
 </resources>

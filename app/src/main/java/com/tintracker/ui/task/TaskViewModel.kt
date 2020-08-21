@@ -47,6 +47,14 @@ class TaskViewModel(
         }
     }
 
+    fun getTaskByDate(start: Long, end: Long) {
+        viewModelScope.launch {
+            taskRepository.getTaskByDate(start, end).collect {
+                _tasksLiveData.value = it
+            }
+        }
+    }
+
     private val _categoriesLiveData = MutableLiveData<List<Category>>()
 
     val categoriesLiveData: LiveData<List<Category>>

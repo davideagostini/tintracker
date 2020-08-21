@@ -22,4 +22,7 @@ interface TaskDao {
     @Query("SELECT * FROM ${Task.TABLE_NAME} WHERE from_time BETWEEN :dayst AND :dayet")
     fun statisticsWeek(dayst: Long, dayet: Long): Flow<List<Task>>
 
+    @Query("SELECT * FROM ${Task.TABLE_NAME} WHERE from_time BETWEEN :dayst AND :dayet and to_time BETWEEN :dayst AND :dayet  ORDER BY from_time DESC")
+    fun getTaskByDate(dayst: Long, dayet: Long): Flow<List<Task>>
+
 }

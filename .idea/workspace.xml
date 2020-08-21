@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e24d1222-f653-4ac2-b837-41656148c2a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_calendar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/date_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/dao/TaskDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/dao/TaskDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/repository/TaskRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/data/repository/TaskRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TaskViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TaskViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TasksFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/ui/task/TasksFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tintracker/utils/DateTimeUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tintracker/utils/DateTimeUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +35,13 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,5 +182,35 @@
       <updated>1597827180354</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2615" y="408" key="AndroidCreateResourceFileDialog" timestamp="1597996876992">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state x="2615" y="408" key="AndroidCreateResourceFileDialog/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597996876992" />
+    <state x="2877" y="486" key="AndroidCreateXmlResourceDialog" timestamp="1597996924581">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state x="2877" y="486" key="AndroidCreateXmlResourceDialog/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597996924581" />
+    <state width="525" height="582" key="DebuggerActiveHint" timestamp="1597998064899">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state width="525" height="582" key="DebuggerActiveHint/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597998064899" />
+    <state width="1578" height="410" key="GridCell.Tab.0.bottom" timestamp="1597998094343">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state width="1578" height="410" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597998094343" />
+    <state width="1578" height="410" key="GridCell.Tab.0.center" timestamp="1597998094342">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state width="1578" height="410" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597998094342" />
+    <state width="1578" height="410" key="GridCell.Tab.0.left" timestamp="1597998094341">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state width="1578" height="410" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597998094341" />
+    <state width="1578" height="410" key="GridCell.Tab.0.right" timestamp="1597998094342">
+      <screen x="1440" y="23" width="2512" height="1417" />
+    </state>
+    <state width="1578" height="410" key="GridCell.Tab.0.right/0.23.1440.877/1440.23.2512.1417@1440.23.2512.1417" timestamp="1597998094342" />
   </component>
 </project>

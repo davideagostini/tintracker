@@ -47,3 +47,8 @@ fun endTimeOfDate(date: Date): Date {
     cal[Calendar.MILLISECOND] = 999
     return cal.time
 }
+
+fun getFormattedWeekSelected(dateStart: Date, dateEnd: Date): String {
+    val df = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
+    return "${df.format(dateStart)} - ${df.format(dateEnd)}"
+}

@@ -1,18 +1,15 @@
 package com.tintracker.ui.task
 
+import android.app.DatePickerDialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import com.tintracker.R
 import com.tintracker.data.model.Project
 import com.tintracker.databinding.FragmentTasksBinding
 import com.tintracker.ui.project.ProjectViewModel
-import com.tintracker.utils.hide
-import com.tintracker.utils.show
-import com.tintracker.utils.toPx
-import com.tintracker.utils.zeroTimeOfDate
+import com.tintracker.utils.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.*
 
@@ -24,6 +21,7 @@ class TasksFragment : Fragment() {
     private val projectViewModel: ProjectViewModel by viewModel()
     private val taskViewModel: TaskViewModel by viewModel()
     private val projectMap = mutableMapOf<Int, Project>()
+    private var week = mutableListOf<Date>()
     private var date = Date()
 
     override fun onCreateView(
@@ -34,12 +32,46 @@ class TasksFragment : Fragment() {
         _binding = FragmentTasksBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        // Set Menu
+        setHasOptionsMenu(true)
+
         binding.listTask.hasFixedSize()
         binding.listTask.adapter = adapter
 
         getProjects()
 
         return view
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.date_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if(item.itemId == R.id.date_picker){
+            showStartDateTimeDialog()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun showStartDateTimeDialog() {
+        val calendar = Calendar.getInstance()
+        val dateListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+            calendar.set(Calendar.YEAR, year)
+            calendar.set(Calendar.MONTH, month)
+            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            date = calendar.time
+            fillDay(date)
+            taskViewModel.getTaskByDate(zeroTimeOfDate(week[0]).time, endTimeOfDate(week[6]).time)
+        }
+
+        DatePickerDialog(
+            requireActivity(),
+            dateListener,
+            calendar.get(Calendar.YEAR),
+            calendar.get(Calendar.MONTH),
+            calendar.get((Calendar.DAY_OF_MONTH))
+        ).show()
     }
 
     private fun getProjects() {
@@ -91,6 +123,21 @@ class TasksFragment : Fragment() {
                 binding.noDataTextView.show()
             }
         })
+    }
+
+    private fun fillDay(date: Date) {
+        week = mutableListOf<Date>()
+        var calendar = Calendar.getInstance()
+        calendar.time = date
+        var cursor = 7
+        while (cursor > 0) {
+            calendar = Calendar.getInstance()
+            calendar.time = date
+            cursor -= 1
+            calendar.add(Calendar.DAY_OF_YEAR, -cursor)
+            val newDate = calendar.time
+            week.add(newDate)
+        }
     }
 
 }

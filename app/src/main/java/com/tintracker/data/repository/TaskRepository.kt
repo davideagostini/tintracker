@@ -30,4 +30,8 @@ class TaskRepository (private val taskDao: TaskDao) {
     fun statisticsDay(start: Long, end: Long): Flow<List<Task>> {
         return taskDao.statisticsDay(start, end)
     }
+
+    fun getTaskByDate(start: Long, end: Long): Flow<List<Task>> {
+        return taskDao.getTaskByDate(start, end)
+    }
 }
